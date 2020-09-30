@@ -1,0 +1,58 @@
+body {
+  direction: ltr;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#4abdff), to(#4cdbff));
+  background-image: linear-gradient(#4abdff, #4cdbff);
+  min-height: 100vh;
+}
+
+.cont {
+  max-width: 480px;
+  border-radius: var(--md-border);
+}
+
+@media (max-width: 600px) {
+  .cont {
+    border-radius: 0px !important;
+  }
+}
+
+.weather-data-cont .app-title {
+  margin-top: -15px;
+  padding: 10px;
+  background-color: rgba(var(--pr-bg), 1);
+}
+
+.weather-data-cont .app-title h1 {
+  font-size: 3rem !important;
+}
+
+.weather-data-cont .weather-cont {
+  padding: 15px 0px;
+  background-color: rgba(var(--sc-bg), 1);
+  border-radius: var(--md-border);
+  font-size: var(--lg-font-size);
+  font-family: "Rimouski", var(--pr-font);
+}
+
+.weather-data-cont .weather-cont .weather-icon {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  margin: auto;
+}
+
+.weather-data-cont .weather-cont .weather-icon img {
+  width: 100%;
+}
+
+.weather-data-cont .weather-cont .temp-value {
+  direction: ltr;
+  font-size: calc(var(--lg-font-size) * 2);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.weather-data-cont .weather-cont .temp-value .temp-unit {
+  font-weight: 400;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,53 @@
+body {
+  direction: ltr;
+  background-image: linear-gradient(rgb(74, 189, 255), rgb(76, 219, 255));
+  min-height: 100vh;
+}
+.cont {
+  max-width: 480px;
+  border-radius: var(--md-border);
+
+  @media (max-width: 600px) {
+    border-radius: 0px !important;
+  }
+}
+.weather-data-cont {
+  .app-title {
+    margin-top: -15px;
+    padding: 10px;
+    background-color: rgba(var(--pr-bg), 1);
+    h1 {
+      font-size: 3rem !important;
+    }
+  }
+
+  .weather-cont {
+    padding: 15px 0px;
+    background-color: rgba(var(--sc-bg), 1);
+    border-radius: var(--md-border);
+    font-size: var(--lg-font-size);
+    font-family: "Rimouski", var(--pr-font);
+
+    .weather-icon {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      margin: auto;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .temp-value {
+      direction: ltr;
+      font-size: calc(var(--lg-font-size) * 2);
+      font-weight: 600;
+      cursor: pointer;
+
+      .temp-unit {
+        font-weight: 400;
+      }
+    }
+  }
+}

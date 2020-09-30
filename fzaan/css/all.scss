@@ -1,0 +1,395 @@
+/* Simple Normalize */
+
+:root {
+  --pr-bg: 255, 255, 255;
+  --sc-bg: 241, 242, 246;
+  --txt-color: 33, 37, 41;
+  --blue-color: 13, 110, 253;
+  --indigo-color: 102, 16, 242;
+  --purple-color: 111, 66, 193;
+  --pink-color: 214, 51, 132;
+  --red-color: 220, 53, 69;
+  --orange-color: 253, 126, 20;
+  --yellow-color: 255, 193, 7;
+  --green-color: 25, 135, 84;
+  --teal-color: 32, 201, 151;
+  --cyan-color: 13, 202, 240;
+  --white-color: 255, 255, 255;
+  --gray-color: 108, 117, 125;
+  --primary-alert-color: 13, 110, 253;
+  --secondary-alert-color: 108, 117, 125;
+  --success-alert-color: 25, 135, 84;
+  --info-alert-color: 13, 202, 240;
+  --warning-alert-color: 255, 193, 7;
+  --danger-alert-color: 220, 53, 69;
+  --lg-border: 14px;
+  --md-border: 10px;
+  --sm-border: 6px;
+  --lg-font-size: 2.5rem;
+  --md-font-size: 1.25rem;
+  --nm-font-size: 1.2rem;
+  --sm-font-size: 1rem;
+  --pr-font: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+  --sc-font: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+    "Courier New", monospace;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: var(--pr-font);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: rgba(var(--txt-color), 1);
+  background-color: rgba(var(--sc-bg), 1);
+}
+
+[tabindex="-1"]:focus:not(:focus-visible) {
+  outline: 0 !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0px;
+  padding: 0px;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+}
+
+h1,
+.h1 {
+  font-size: calc(1.375rem + 1.5vw);
+}
+
+@media (min-width: 1200px) {
+  h1,
+  .h1 {
+    font-size: 2.5rem;
+  }
+}
+
+h2,
+.h2 {
+  font-size: calc(1.325rem + 0.9vw);
+}
+
+@media (min-width: 1200px) {
+  h2,
+  .h2 {
+    font-size: 2rem;
+  }
+}
+
+h3,
+.h3 {
+  font-size: calc(1.3rem + 0.6vw);
+}
+
+@media (min-width: 1200px) {
+  h3,
+  .h3 {
+    font-size: 1.75rem;
+  }
+}
+
+h4,
+.h4 {
+  font-size: calc(1.275rem + 0.3vw);
+}
+
+@media (min-width: 1200px) {
+  h4,
+  .h4 {
+    font-size: 1.5rem;
+  }
+}
+
+h5,
+.h5 {
+  font-size: 1.25rem;
+}
+
+h6,
+.h6 {
+  font-size: 1rem;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Random Properties */
+
+/* Display */
+.hidden {
+  display: none;
+}
+
+/* Background */
+.half-bg-color {
+  background-color: rgba(var(--pr-bg), 0.5) !important;
+}
+
+.no-bg-color {
+  background-color: transparent !important;
+}
+
+/* Text */
+.text-center {
+  text-align: center;
+}
+
+/* Containers */
+
+.cont {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  background-color: rgba(var(--pr-bg), 1);
+
+  @media (min-width: 768px) {
+    width: 90%;
+  }
+
+  @media (min-width: 1200px) {
+    width: 80%;
+  }
+}
+
+.fluid-cont {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.md-cont {
+  margin-right: auto;
+  margin-left: auto;
+  padding: 15px 0px;
+  background-color: inherit;
+
+  @media (min-width: 460px) {
+    width: 100%;
+  }
+
+  @media (min-width: 768px) {
+    width: 90%;
+  }
+
+  @media (min-width: 1200px) {
+    width: 80%;
+  }
+}
+
+.sm-cont {
+  margin-right: auto;
+  margin-left: auto;
+  padding: 15px 0px;
+  background-color: inherit;
+
+  @media (min-width: 460px) {
+    width: 90%;
+  }
+
+  @media (min-width: 768px) {
+    width: 60%;
+  }
+
+  @media (min-width: 1200px) {
+    width: 40%;
+  }
+}
+
+/* Grid System */
+
+.flex {
+  display: flex;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.row-reverse {
+  flex-direction: row-reverse;
+}
+
+.col {
+  flex-direction: column;
+}
+
+.col-reverse {
+  flex-direction: column-reverse;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+
+.nowrap {
+  flex-wrap: nowrap;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-start {
+  align-items: flex-start;
+}
+
+.align-end {
+  align-items: flex-end;
+}
+
+.align-between {
+  align-content: space-between;
+}
+
+.align-around {
+  align-content: space-around;
+}
+
+.align-self-center {
+  align-self: center;
+}
+
+.align-self-start {
+  align-self: flex-start;
+}
+
+.align-self-end {
+  align-self: flex-end;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.justify-evenly {
+  justify-content: space-evenly;
+}
+
+/* Alerts */
+
+.alert {
+  width: 100%;
+  margin: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 10px 15px;
+  background-color: transparent;
+  border-radius: var(--sm-border);
+  font-size: var(--nm-font-size);
+  font-weight: 400;
+  color: rgba(var(--txt-color), 1);
+
+  a {
+    font-weight: 500;
+    color: inherit;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.alert-red {
+  background-color: rgba(var(--danger-alert-color), 0.2);
+  color: rgba(var(--danger-alert-color), 1);
+}
+
+.alert-light {
+  background-color: inherit;
+  color: rgba(var(--gray-color), 1);
+}
+
+.alert-gray {
+  background-color: rgba(var(--secondary-alert-color), 0.2);
+  color: rgba(var(--secondary-alert-color), 1);
+}
+
+.alert-green {
+  background-color: rgba(var(--success-alert-color), 0.2);
+  color: rgba(var(--success-alert-color), 1);
+}
+
+.alert-blue {
+  background-color: rgba(var(--primary-alert-color), 0.2);
+  color: rgba(var(--primary-alert-color), 1);
+}
+
+.alert-light-blue {
+  background-color: rgba(var(--info-alert-color), 0.2);
+  color: rgba(var(--info-alert-color), 1);
+}
+
+.alert-yellow {
+  background-color: rgba(var(--warning-alert-color), 0.2);
+  color: rgba(var(--warning-alert-color), 1);
+}
