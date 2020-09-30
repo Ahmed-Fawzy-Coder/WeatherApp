@@ -3,7 +3,7 @@ A Weather App To Know Your Location By GeoLoaction
 
 ## Description
 
-AN OpenSource Weather App To Know Your Location By GeoLoaction And Fetching Data From OpenWeather Api
+An OpenSource Weather App To Know Your Location By GeoLoaction And Fetching Data From OpenWeather Api
 
 ## Getting Started
 
