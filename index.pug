@@ -1,0 +1,24 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title WeatherNow
+        link(rel="stylesheet", href="fzaan/css/all.css")    
+        link(rel="stylesheet", href="fonts/Rimouski.css")
+        link(rel="stylesheet", href="css/style.css")
+        script(defer, src="fzaan/js/main.js")
+        script(defer, src="js/app.js")
+    body.flex.justify-center.align-center
+        .cont.half-bg-color
+            .weather-data-cont
+                .md-cont
+                    .fluid-cont.app-title.no-bg-color: h1.text-center Weather
+                    .alert.alert-red.my-alert.hidden
+                    .fluid-cont.weather-cont.half-bg-color
+                        .weather-icon: img(src="dist/icons/unknown.svg", alt="Unknown")
+                        .fluid-cont.temp-value.text-center
+                            span - ° 
+                            span.temp-unit: sub C
+                        .fluid-cont.temp-description.text-center: p -
+                        .fluid-cont.location.text-center: p -
