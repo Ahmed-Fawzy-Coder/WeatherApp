@@ -61,7 +61,7 @@ if ("geolocation" in navigator) {
 
 let getWeather = (lati, long) => {
   const kelven = 273,
-    appKey = "f53f4ebe12067b53e478083dcb88245a",
+    appKey = "your__Api__Key__Here",
     api = `http://api.openweathermap.org/data/2.5/weather?lat=${lati}&lon=${long}&appid=${appKey}`;
 
   fetch(api)
