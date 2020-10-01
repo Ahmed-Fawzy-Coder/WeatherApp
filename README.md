@@ -7,6 +7,7 @@ An OpenSource Weather App To Know Your Location By GeoLoaction And Fetching Data
 
 ## Getting Started
 
+* Generate Your Api Key From OpenWeather Api Then Value It To 'appKey' Variable In app.js File
 * No Need To Install Any Thing, You Can View The Web Page Localy By Opening index.html File OR By Uploading It Into A Server
 
 ### Used Languages
